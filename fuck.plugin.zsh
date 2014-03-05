@@ -1,3 +1,5 @@
+export PATH=$PATH:$(dirname $0)/bin
+
 function fuck() {
   [[ -f $ZSH_CUSTOM/plugins/fuck/fuck.plugin.zsh ]] && DIR=$ZSH_CUSTOM/plugins/fuck
   [[ -f $ZSH/plugins/fuck/fuck.plugin.zsh ]] && DIR=$ZSH/plugins/fuck
