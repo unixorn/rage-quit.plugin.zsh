@@ -8,7 +8,7 @@ was based on [rage-quit support for bash](https://gist.github.com/namuol/9122237
 # HOW TO INSTALL
 Add ```antigen bundle unixorn/rake-completion.zshplugin``` to your zshrc.
 
-This plugin adds itself to your $PATH so you don't have to install
-flip separately.
+This plugin adds itself to your `$PATH` so you don't have to install
+`flip` separately.
 
 I didn't write any of this, I just bundled it for antigen.

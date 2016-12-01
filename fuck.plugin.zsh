@@ -1,10 +1,10 @@
 export PATH=$PATH:$(dirname $0)/bin
 
 function fuck() {
-  [[ -f $ZSH_CUSTOM/plugins/fuck/fuck.plugin.zsh ]] && DIR=$ZSH_CUSTOM/plugins/fuck
-  [[ -f $ZSH/plugins/fuck/fuck.plugin.zsh ]] && DIR=$ZSH/plugins/fuck
 
-  if killall -9 "$2"; then
-    echo ; echo " (╯°□°）╯︵$(echo "$2"|${DIR}/flip)"; echo
+  # consume arg 1
+  shift
+  if killall -9 $@; then
+    echo ; echo " (╯°□°）╯︵$(echo "$@" | flip)"; echo
   fi
 }
